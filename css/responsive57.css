@@ -1,0 +1,412 @@
+.col_1, .col_2 {
+	display: inline-block;
+	vertical-align: top;
+}
+.col_1 {width: 100%}
+.col_2 {width: 50%}
+
+@media (max-width: 1100px) {
+	header .logo, header .contacts {
+		display: block;
+		text-align: left;
+	}
+	.contacts {
+		float: none;
+	}
+	.content {
+		padding: 0px 20px;
+	}
+	.home_ipoteka {
+		display: block;
+	}
+	.home_ipoteka .left_side,
+	.home_ipoteka .right_side
+	{
+		display: block ;
+		width: 100%;
+		min-width: 0;
+	}
+	.home_ipoteka .left_side br {
+		display: none;
+	}
+	.home_ipoteka h1 {
+		height: auto;
+		padding: 15px 0px 40px;
+		font-size: 42px;
+	}
+	.home_ipoteka .right_side .note_page {
+		display: none;
+	}
+	.home_ipoteka .left_side #ostavit_zayavku_form {
+		display: inline-block;
+		position: absolute;
+		right: 60px;
+		top: 355px;
+	}
+	.timer {
+		position: absolute;
+		bottom: 30px;
+	}
+	.dash_arrow {
+		top: 275px;
+		left: 15%;
+		width: 45%;
+	}
+	.info_ipoteka .files {
+		display: block;
+		width: 100%;
+		padding-bottom: 50px;
+	}
+	.info_ipoteka .files br {
+		
+	}
+	.info_ipoteka .files a {
+		padding-right: 16px;
+	}
+	footer .table > * {
+		width: 50%;
+	}
+	footer .table > *:last-child {
+		display: none;
+	}
+	.info_ipoteka input[type=button] {
+		right: 60px;
+	}
+	.sitemap {
+		top: 0px;
+		margin-bottom: 0px;
+	}
+	.keys_icon {
+		display: none;
+	}
+	.calc_ipoteka, .calc_bank {
+		min-width: 320px;
+	}
+	.calc_bank .bank .value {
+		min-width: 80px;
+		font-size: 20px;
+	} 
+	.calc_bank .bank .label {
+		font-size: 14px;
+	}
+	.calc_bank .bank .label input[type="button"] {
+		font-size: 15px;
+		min-height: 36px;
+	}
+	.calc_bank .bank.bank_cur {
+		padding: 16px 3% 10px;
+	}
+	.calc_bank .bank.bank_cur .label {
+		font-size: 15px;
+	}
+	.calc_bank .bank.bank_cur .value {
+		font-size: 24px;
+		min-width: 90px;
+	}
+	.calc_bank .bank.bank_cur .row:not(:first-child):not(:last-child) .label {
+		max-width: 60%;
+	}
+	.calc_ipoteka .input {
+		font-size: 14px;
+	}
+	.calc_ipoteka .input .row_right {
+		min-width: 210px;
+	}
+	.calc_ipoteka .input .row_left {
+		min-width: 250px;
+	}
+	.calc_ipoteka .tabs li {
+		display: inline-block;
+	}
+}
+@media (max-width: 890px) {
+	.info_ipoteka .left_side,
+	.info_ipoteka .right_side
+	{
+		display: block ;
+		width: 100%;
+		min-width: 0;
+	}
+	.info_ipoteka h2 {
+		padding-bottom: 40px;
+	}
+	.info_ipoteka h2 br {
+		display: none;
+	}
+	.dash_arrow {
+		top: 275px;
+		left: 10%;
+		width: 40%;
+	}
+	footer .row .right br {
+		display: none;
+	}
+	footer .row .right {
+		text-align: justify;
+	}
+	.calc_bank .bank {
+		width: 100%;
+		padding: 16px 3% 10px;
+		border-width: 0px 0px 8px !important;
+	}
+	.calc_bank .bank .row {
+		display: inline-block;
+		width: 50%;  
+		vertical-align: bottom;
+		
+	}     
+	.calc_bank .bank .row:last-child {
+		width: 100%;
+	}
+	
+	.calc_bank .bank .row:first-child .label,
+	.calc_bank .bank .row:first-child .value
+	{
+		width:100%;
+		display: inline-block;
+		
+	}
+	.calc_bank .bank .row:last-child .label,
+	.calc_bank .bank .row:last-child .value {
+		width: 50%;
+		min-width: 50%;
+		display: inline-block;
+	}
+	.calc_bank .bank .row .label,
+	.calc_bank .bank .row .value
+	{
+		text-align: left;
+		padding: 4px 6px;
+		font-size: 14px;
+		
+	}
+	.calc_bank .bank .row .value {
+		min-width: 75px;
+		width: 75px;
+		font-size: 20px;
+		
+	}
+	.calc_bank .bank .row img {
+		max-height: 32px;
+	}
+	.calc_about, .calc_result {
+		min-width: 240px;
+	}
+	.calc input[type="button"] {
+		font-size: 20px;
+		min-height: 52px;
+	}
+	.calc_result .label {
+		font-size: 16px;
+	}
+	
+	.calc_ipoteka .input .row_left,
+	.calc_ipoteka .input .row_right {
+		display: block;
+		width: 100%;
+		min-width: 280px;
+	}
+	
+	.slider {
+		height: 30px;
+		border-radius: 15px;
+		padding: 0px;
+		margin: 4px 0px 26px;
+	}
+	.slider .ui-slider-range-min {
+		border-radius: 15px;
+		min-width: 30px;
+		margin: 0px;
+	}
+	.slider .ui-slider-handle {
+		margin: 0px;
+		border-radius: 15px;
+		display: none;
+	}
+	.slider .ui-slider-handle:focus {
+		background: #1ABC9C;
+	}
+	.slider .ui-slider-label {
+		top: 4px;
+	}
+	.pluso {
+		margin: 10px auto !important;
+		float: none !important;
+		display: block !important;
+		text-align: center !important;
+	}
+}
+@media (max-width: 740px) {
+	.dash_arrow {
+		display: none;
+	}
+	.col_xm_1 {
+		display: block;
+		width: 100%;
+	}
+	.row .item br {
+		display: none;
+	}
+	.home_ipoteka h1 {
+		font-size: 30px;
+		padding: 0px 0px 15px;
+		white-space: normal;
+	}
+	.home_ipoteka .info {
+		padding: 15px 0px
+	}
+	.timer {
+		position: relative;
+		top: 0px;
+		left: 0px;
+		display: block;
+		width: 192px;
+		margin: 0px auto;
+	}
+	.home_ipoteka .left_side #ostavit_zayavku_form {
+		position: relative;
+		top: 0px;
+		left: 0px;
+		display: block;
+		margin: 15px auto 0px;
+	}
+	.info_ipoteka input[type=button] {
+		position: relative;
+		top: 0px;
+		left: 0px;
+		display: block;
+		margin: 0px auto -30px;
+	}
+	.info_ipoteka .item span {
+		display: block;
+	}
+	.info_ipoteka h2 {
+		position: relative;
+		top: 0px;
+		left: 0px;
+		margin: 30px 0px 20px;
+		padding: 0px;
+	}
+	.icon_round {
+		margin-right: 10px;
+	}
+	footer .table > * {
+		display: block;
+		width: 100%;
+	}
+	.calc_bank .bank .row {
+		width: 100% !important;
+		display: table-row !important;
+	}
+	.calc_bank .bank .value {
+		min-width: 80px;
+		font-size: 20px;
+		display: table-cell !important;
+		width: 35% !important;
+		text-align: right !important;
+	} 
+	.calc_bank .bank .label {
+		font-size: 14px;
+		display: table-cell !important;
+		width: 65% !important;
+	}
+}
+@media (max-width: 620px) {
+	.home_ipoteka {
+		height: auto;
+	}
+	hr.vertical {
+		opacity: 0;
+	}
+	.logo, .contacts {
+		white-space: normal;
+	}
+	.contacts .icon {
+		float: left;
+		margin-right: 10px;
+	}
+	.contacts .contact {
+		display: block;
+		padding-bottom: 10px;
+		max-width: 100%;
+	}
+	#home_ipoteka {
+		background-image: url(http://ipoteka.fin-partners.ru/img/home_ipoteka_d.jpg);
+	}
+	#home_ipoteka video {
+		display: none !important;
+	}
+	
+	.calc_bank, .calc_about, .calc_ipoteka, .calc_result {
+		min-width: 320px;
+		width: 100%;
+		display: block;
+	}
+	img[src$="logo_text.png"] {
+		display: none;
+	}
+}
+@media (max-width: 520px) {
+	.home_ipoteka, .info_ipoteka {
+		padding: 15px 20px;
+	}
+	.right_side, .left_side {
+		padding: 0px !important;
+	}
+	hr.vertical {
+		display: none;
+	}
+	.logo img {
+		max-width: 100%;
+		height: auto;
+		text-align: center;
+	}
+	.icon_round {
+		margin-left: 0px;
+	}
+	.about {
+		padding: 0px 20px 10px;
+	}
+}
+@media (max-width: 460px) {
+	.p_30 {
+		padding: 10px;
+	}
+	footer {
+		padding: 0px 10px 10px
+	}
+	header {
+		padding: 18px 10px;
+	}
+	.f_bl a {
+		padding: 0px 0px 4px;
+		display: inline-block;
+		margin-top: 6px;
+	}
+	.calc_ipoteka .tabs li, .calc_ipoteka .tabs {
+		display: block;
+		width: 100%;
+	}
+	.calc_ipoteka .tabs li a {
+		width: 100%;
+	}
+	
+	
+}
+@media (max-width: 380px) {
+	.content {
+		padding: 0px 0px;
+	}
+	.home_ipoteka h1 {
+		font-size: 26px;
+	}
+	.home_ipoteka .info {
+		font-size: 16px;
+	}
+	.f_30 {
+		font-size: 24px;
+	}
+	.calc_ipoteka .input .row_clear br {
+		display: none;
+	}
+}

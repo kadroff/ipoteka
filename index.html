@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<meta name="language" content="ru"/>
+		<meta name="robots" content="index, all"/>
+		<title>
+			Калькулятор ипотеки 
+					</title>
+				<!---->
+		<link rel="stylesheet" type="text/css" href="./css/font18.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/responsive57.css"/>
+		<link rel="shortcut icon" href="./icon/favicon_calc.ico" type="image/x-icon" />
+				<!---->
+		<script src="./js/jquery17.js"></script>
+		<script src="./js/jquery.mask21.js"></script>
+		<script src="./js/jquery-ui.min16.js"></script>
+		<script src="./js/jquery-ui-slider-pips53.js"></script>
+		<script src="./js/jquery.touch.min55.js"></script>
+		<script src="./js/ya.init91.js"></script>
+		<script src="./js/script04.js"></script>
+		<script src="./js/calc.js"></script>
+		<script id="bx24_form_button" data-skip-moving="true">
+			(function(w,d,u,b){w['Bitrix24FormObject']=b;w[b] = w[b] || function(){arguments[0].ref=u;
+							(w[b].forms=w[b].forms||[]).push(arguments[0])};
+							if(w[b]['forms']) return;
+							var s=d.createElement('script');s.async=1;s.src=u+'?'+(1*new Date());
+							var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+			})(window,document,'https://creditexpert.bitrix24.ru/bitrix/js/crm/form_loader.js','b24form');
+
+			b24form({"id":"50","lang":"ru","sec":"hw61h6","type":"button","click":""});
+</script>
+	</head>
+	<body>
+		<div id="loading"></div>
+
+		<div id="page">
+							<div class="page">
+				<header>
+					<div class="logo left">
+													<a href="#"><img src="./img/logo_calc.png" alt="Калькулятор ипотеки" rel="up"/></a><hr class="vertical">
+							<a href="#" rel="up"><img src="./img/logo_sberbank.png"/></a>
+							<hr class="vertical">
+							<!--googleoff: index-->
+							<!--noindex-->
+							<a href="https://loanmart.ru/">
+								<img src="./img/logo_loanmart.png" style="margin: 12px 0px;" alt="Лоанмарт"/>
+							</a>
+							<!--/noindex-->
+							<!--googleon: index-->
+							
+											</div>
+					<div class="contacts">
+						<i class="icon _tel"></i>
+						<div class="contact">
+							<span class="f_17 info_tel">
+								+7 (347) 214-91-54					
+								</span>
+							<a href="#" class="b24-web-form-popup-btn-50">Заказать звонок</a>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</header>
+				<div class="content">	
+<div class="calc">
+	<h1>Калькулятор ипотеки</h1>
+	<div class="h2">Рассчитайте и получите одобрение за 3 дня</div>
+</div>
+<div class="calc m_a">
+
+	<div class="calc_ipoteka">
+		
+		<div class="label">
+			Вид расчета
+		</div>
+		<div class="input">
+			<ul class="tabs">
+				<li><a href="#calc_nedv">По стоимости недвижимости</a></li>
+				<li><a href="#calc_cred">По сумме кредита</a></li>
+				<li><a href="#calc_earn">По размеру дохода</a></li>
+			</ul>
+		</div>
+		<div id="calc_nedv">
+			<div class="label">
+				Стоимость недвижимости
+			</div>
+			<div class="input">
+				<div class="row_left">
+					<div class="slider" id="calc_nedv_money_nedv_for"></div>
+				</div>
+				<div class="row_right">
+					<input type="text" name="money_nedv" id="calc_nedv_money_nedv" value="2 000 000" placeholder="Цена недвижимости" title="Цена недвижимости" pattern="^(\d){0,}[ ]{0,}(\d){0,}[ ]{0,}(\d){0,}[ ]{0,}(\d){0,}[ ]{0,}(\d){0,}$" class="wa nf" size="13" maxlength="10"/>
+					<label for="calc_nedv_money_nedv">руб.</label>
+				</div>
+			</div>
+			
+			<div class="label">
+				Первоначальный взнос
+			</div>
+			<div class="input">
+				<div class="row_left">
+					<div class="calc_nedv_vznos_proc">
+						<div class="slider" id="calc_nedv_proc_vznos_for"></div>
+					</div>
+					<div class="calc_nedv_vznos_money">
+						<div class="slider" id="calc_nedv_money_vznos_for"></div>
+					</div>
+				</div>
+				<div class="row_right">
+					<div class="row_float">
+						<div class="calc_nedv_vznos_proc">
+							<input type="text" placeholder="%" title="%" pattern="[\d]{1,2}" name="proc_vznos" id="calc_nedv_proc_vznos" maxlength="2" size="3" class="wa" value="20"/>
+						</div>
+						<div class="calc_nedv_vznos_money">
+							<input type="text" name="money_vznos_nedv" id="calc_nedv_money_vznos" value="400 000" placeholder="Сумма взноса" title="Сумма взноса" pattern="^(\d){0,}[ ]{0,}(\d){0,}[ ]{0,}(\d){0,}[ ]{0,}(\d){0,}[ ]{0,}(\d){0,}$" class="wa nf" size="13" maxlength="10"/>
+						</div>
+					</div>
+					<div class="row_clear" id="calc_nedv_vznos_type">
+						<input type="radio" name="vznos_type" value="0" id="calc_nedv_vznos_type_p" checked="checked"/>
+						<label for="calc_nedv_vznos_type_p" class="radio" ></label>
+						<label for="calc_nedv_vznos_type_p">%</label>
+						<br/>
+						<input type="radio" name="vznos_type" value="1" id="calc_nedv_vznos_type_m"/>
+						<label for="calc_nedv_vznos_type_m" class="radio"></label>
+						<label for="calc_nedv_vznos_type_m">руб.</label>
+					</div>
+				</div>
+			</div>
+			
+			<div class="label">
+				Процентная ставка
+			</div>
+			<div class="input">
+				<div class="row_left">
+					<div class="slider" id="calc_nedv_proc_for"></div>
+				</div>
+				<div class="row_right">
+					<input type="text" name="proc" value="13.0" pattern="^(\d){1,2}([.][\d])?$" placeholder="%" title="%" id="calc_nedv_proc" size="3" maxlength="4" class="wa"/>
+					<label for="calc_nedv_proc">%</label>
+				</div>
+			</div>
+			
+			<div class="label">
+				Срок кредита
+			</div>
+			<div class="input">
+				<div class="row_left">
+					<div class="calc_nedv_srok_y">
+						<div class="slider" id="calc_nedv_srok_y_for"></div>
+					</div>
+					<div class="calc_nedv_srok_m">
+						<div class="slider" id="calc_nedv_srok_m_for"></div>
+					</div>
+				</div>
+				<div class="row_right">
+					<div class="row_float">
+						<div class="calc_nedv_srok_y">
+							<input type="text" placeholder="Срок" title="Срок кредита" pattern="[\d]{1,2}" name="srok_y" id="calc_nedv_srok_y" maxlength="2" size="3" class="wa" value="5"/>
+						</div>
+						<div class="calc_nedv_srok_m">
+							<input type="text" placeholder="Срок" title="Срок кредита" pattern="[\d]{1,3}" name="srok_m" id="calc_nedv_srok_m" maxlength="3" size="3" class="wa" value="60"/>
+						</div>
+					</div>
+					<div class="row_clear" id="calc_nedv_srok_type">
+						<input type="radio" name="calc_nedv_srok_type" value="0" id="calc_nedv_srok_type_y" checked="checked"/>
+						<label for="calc_nedv_srok_type_y" class="radio" ></label>
+						<label for="calc_nedv_srok_type_y">лет</label>
+						<br/>
+						<input type="radio" name="calc_nedv_srok_type" value="1" id="calc_nedv_srok_type_m"/>
+						<label for="calc_nedv_srok_type_m" class="radio"></label>
+						<label for="calc_nedv_srok_type_m">месяцев</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="calc_cred">
+			<div class="label">
+				Размер кредита
+			</div>
+			<div class="input">
+				<div class="row_left">
+					<div class="slider" id="calc_cred_money_cred_for"></div>
+				</div>
+				<div class="row_right">
+					<input type="text" name="money_cred" id="calc_cred_money_cred" value="2 000 000" placeholder="Размер кредита" title="Размер кредита" pattern="^(\d){0,}[ ]{0,}(\d){0,}[ ]{0,}(\d){0,}[ ]{0,}(\d){0,}[ ]{0,}(\d){0,}$" class="wa nf" size="13" maxlength="10"/>
+					<label for="calc_cred_money_cred">руб.</label>
+				</div>
+			</div>
+			
+			<div class="label">
+				Первоначальный взнос
+			</div>
+			<div class="input">
+				<div class="row_left">
+					<div class="calc_cred_vznos_proc">
+						<div class="slider" id="calc_cred_proc_vznos_for"></div>
+					</div>
+					<div class="calc_cred_vznos_money">
+						<div class="slider" id="calc_cred_money_vznos_for"></div>
+					</div>
+				</div>
+				<div class="row_right">
+					<div class="row_float">
+						<div class="calc_cred_vznos_proc">
+							<input type="text" placeholder="%" title="%" pattern="[\d]{1,2}" name="proc_vznos" id="calc_cred_proc_vznos" maxlength="2" size="3" class="wa" value="20"/>
+						</div>
+						<div class="calc_cred_vznos_money">
+							<input type="text" name="money_vznos_cred" id="calc_cred_money_vznos" value="400 000" placeholder="Сумма взноса" title="Сумма взноса" pattern="^(\d){0,}[ ]{0,}(\d){0,}[ ]{0,}(\d){0,}[ ]{0,}(\d){0,}[ ]{0,}(\d){0,}$" class="wa nf" size="13" maxlength="10"/>
+						</div>
+					</div>
+					<div class="row_clear" id="calc_cred_vznos_type">
+						<input type="radio" name="vznos_type_cred" value="0" id="calc_cred_vznos_type_p" />
+						<label for="calc_cred_vznos_type_p" class="radio" ></label>
+						<label for="calc_cred_vznos_type_p">%</label>
+						<br/>
+						<input type="radio" name="vznos_type_cred" value="1" id="calc_cred_vznos_type_m" checked="checked"/>
+						<label for="calc_cred_vznos_type_m" class="radio" ></label>
+						<label for="calc_cred_vznos_type_m">руб.</label>
+					</div>
+				</div>
+			</div>
+			
+			<div class="label">
+				Процентная ставка
+			</div>
+			<div class="input">
+				<div class="row_left">
+					<div class="slider" id="calc_cred_proc_for"></div>
+				</div>
+				<div class="row_right">
+					<input type="text" name="proc" value="13.0" pattern="^(\d){1,2}([.][\d])?$" placeholder="%" title="%" id="calc_cred_proc" size="3" maxlength="4" class="wa"/>
+					<label for="calc_cred_proc">%</label>
+				</div>
+			</div>
+			
+			<div class="label">
+				Срок кредита
+			</div>
+			<div class="input">
+				<div class="row_left">
+					<div class="calc_cred_srok_y">
+						<div class="slider" id="calc_cred_srok_y_for"></div>
+					</div>
+					<div class="calc_cred_srok_m">
+						<div class="slider" id="calc_cred_srok_m_for"></div>
+					</div>
+				</div>
+				<div class="row_right">
+					<div class="row_float">
+						<div class="calc_cred_srok_y">
+							<input type="text" placeholder="Срок" title="Срок кредита" pattern="[\d]{1,2}" name="srok_y" id="calc_cred_srok_y" maxlength="2" size="3" class="wa" value="5"/>
+						</div>
+						<div class="calc_cred_srok_m">
+							<input type="text" placeholder="Срок" title="Срок кредита" pattern="[\d]{1,3}" name="srok_m" id="calc_cred_srok_m" maxlength="3" size="3" class="wa" value="60"/>
+						</div>
+					</div>
+					<div class="row_clear" id="calc_cred_srok_type">
+						<input type="radio" name="calc_cred_srok_type" value="0" id="calc_cred_srok_type_y" checked="checked"/>
+						<label for="calc_cred_srok_type_y" class="radio" ></label>
+						<label for="calc_cred_srok_type_y">лет</label>
+						<br/>
+						<input type="radio" name="calc_cred_srok_type" value="1" id="calc_cred_srok_type_m"/>
+						<label for="calc_cred_srok_type_m" class="radio"></label>
+						<label for="calc_cred_srok_type_m">месяцев</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="calc_earn">
+			<div class="label">
+				Размер дохода
+			</div>
+			<div class="input">
+				<div class="row_left">
+					<div class="slider" id="calc_earn_money_earn_for"></div>
+				</div>
+				<div class="row_right">
+					<input type="text" name="money_earn" id="calc_earn_money_earn" value="40 000" placeholder="Размер дохода" title="Размер кредита" pattern="^(\d){0,}[ ]{0,}(\d){0,}[ ]{0,}(\d){0,}[ ]{0,}(\d){0,}[ ]{0,}(\d){0,}$" class="wa nf" size="13" maxlength="10"/>
+					<label for="calc_earn_money_earn">руб.</label>
+				</div>
+			</div>
+			
+			<div class="label">
+				Первоначальный взнос
+			</div>
+			<div class="input">
+				<div class="row_left">
+					<div class="calc_earn_vznos_proc">
+						<div class="slider" id="calc_earn_proc_vznos_for"></div>
+					</div>
+					<div class="calc_earn_vznos_money">
+						<div class="slider" id="calc_earn_money_vznos_for"></div>
+					</div>
+				</div>
+				<div class="row_right">
+					<div class="row_float">
+						<div class="calc_earn_vznos_proc">
+							<input type="text" placeholder="%" title="%" pattern="[\d]{1,2}" name="proc_vznos" id="calc_earn_proc_vznos" maxlength="2" size="3" class="wa" value="20"/>
+						</div>
+						<div class="calc_earn_vznos_money">
+							<input type="text" name="money_vznos_earn" id="calc_earn_money_vznos" value="400 000" placeholder="Сумма взноса" title="Сумма взноса" pattern="^(\d){0,}[ ]{0,}(\d){0,}[ ]{0,}(\d){0,}[ ]{0,}(\d){0,}[ ]{0,}(\d){0,}$" class="wa nf" size="13" maxlength="10"/>
+						</div>
+					</div>
+					<div class="row_clear" id="calc_earn_vznos_type">
+						<input type="radio" name="vznos_type_earn" value="0" id="calc_earn_vznos_type_p" />
+						<label for="calc_earn_vznos_type_p" class="radio" ></label>
+						<label for="calc_earn_vznos_type_p">%</label>
+						<br/>
+						<input type="radio" name="vznos_type_earn" value="1" id="calc_earn_vznos_type_m" checked="checked"/>
+						<label for="calc_earn_vznos_type_m" class="radio" ></label>
+						<label for="calc_earn_vznos_type_m">руб.</label>
+					</div>
+				</div>
+			</div>
+			
+			<div class="label">
+				Процентная ставка
+			</div>
+			<div class="input">
+				<div class="row_left">
+					<div class="slider" id="calc_earn_proc_for"></div>
+				</div>
+				<div class="row_right">
+					<input type="text" name="proc" value="13.0" pattern="^(\d){1,2}([.][\d])?$" placeholder="%" title="%" id="calc_earn_proc" size="3" maxlength="4" class="wa"/>
+					<label for="calc_earn_proc">%</label>
+				</div>
+			</div>
+			
+			<div class="label">
+				Срок кредита
+			</div>
+			<div class="input">
+				<div class="row_left">
+					<div class="calc_earn_srok_y">
+						<div class="slider" id="calc_earn_srok_y_for"></div>
+					</div>
+					<div class="calc_earn_srok_m">
+						<div class="slider" id="calc_earn_srok_m_for"></div>
+					</div>
+				</div>
+				<div class="row_right">
+					<div class="row_float">
+						<div class="calc_earn_srok_y">
+							<input type="text" placeholder="Срок" title="Срок кредита" pattern="[\d]{1,2}" name="srok_y" id="calc_earn_srok_y" maxlength="2" size="3" class="wa" value="5"/>
+						</div>
+						<div class="calc_earn_srok_m">
+							<input type="text" placeholder="Срок" title="Срок кредита" pattern="[\d]{1,3}" name="srok_m" id="calc_earn_srok_m" maxlength="3" size="3" class="wa" value="60"/>
+						</div>
+					</div>
+					<div class="row_clear" id="calc_earn_srok_type">
+						<input type="radio" name="calc_earn_srok_type" value="0" id="calc_earn_srok_type_y" checked="checked"/>
+						<label for="calc_earn_srok_type_y" class="radio" ></label>
+						<label for="calc_earn_srok_type_y">лет</label>
+						<br/>
+						<input type="radio" name="calc_earn_srok_type" value="1" id="calc_earn_srok_type_m"/>
+						<label for="calc_earn_srok_type_m" class="radio"></label>
+						<label for="calc_earn_srok_type_m">месяцев</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+	</div>
+	<div class="calc_result">
+		<div id="calc_result">
+			<div class="label">Размер кредита</div>
+			<div class="value">1 600 000 руб.</div>
+			<div class="label">Ежемесячный платеж</div>
+			<div class="value">36 404 руб.</div>
+			<div class="label">Сумма всех выплат</div>
+			<div class="value">2 184 240 руб.</div>
+			<div class="label">Необходимый ежемесячный доход</div>
+			<div class="value">72 500 руб.</div>
+		</div>
+		<div class="center">
+			<input type="button" class="b24-web-form-popup-btn-50" value="Отправить заявку"/>
+			<div class="p_10"><span class="dn">Отправить заявку на ипотеку</span>во все банки или <a href="#calc_bank" >выберите банк</a></div>		</div>
+	</div>
+</div>
+
+
+<div class="clear"></div>
+<h2 class="p_20">Оставьте заявку и получите одобрение за 3 дня</h2><!-- call -->
+<div class="calc">
+	<div class="calc_bank" id="calc_bank">
+		<div class="bank_list" id="bank_list"><div class="bank" data-proc="13" data-vznos="30" data-srok="25"><div class="row">
+<div class="value"><img src="./img/logo_sberbank.png" alt="Сбербанк"/><span class="dn">Сбербанк</span></div><div class="label">Ипотека «Вторичное жилье»</div>
+</div><div class="row">
+<div class="value">9.2%</div><div class="label">Ставка</div>
+</div><div class="row">
+<div class="value">от 20%</div><div class="label">Первоначальный взнос</div>
+</div><div class="row">
+<div class="value">30 лет</div><div class="label">Срок кредитования</div>
+</div><div class="row">
+<div class="value"></div><div class="label"><input type="button" class="b24-web-form-popup-btn-50" value="Отправить заявку"/></div>
+</div></div><div class="bank" data-proc="13.5" data-vznos="20" data-srok="25"><div class="row">
+<div class="value"><img src="./img/logo_absolut_bank.png" alt="Абсолют Банк"/><span class="dn">Абсолют Банк</span></div><div class="label">Ипотека «Вторичное жилье»</div>
+</div><div class="row">
+<div class="value">9.74%</div><div class="label">Ставка</div>
+</div><div class="row">
+<div class="value">от 20%</div><div class="label">Первоначальный взнос</div>
+</div><div class="row">
+<div class="value">30 лет</div><div class="label">Срок кредитования</div>
+</div><div class="row">
+<div class="value"></div><div class="label"><input type="button" class="b24-web-form-popup-btn-50" value="Отправить заявку"/></div>
+</div></div><div class="bank" data-proc="17.5" data-vznos="30" data-srok="25"><div class="row">
+<div class="value"><img src="./img/logo_alpha_bank.png" alt="Альфа-Банк"/><span class="dn">Альфа-Банк</span></div><div class="label">Квартиры на вторичном рынке жилья</div>
+</div><div class="row">
+<div class="value">9.39%</div><div class="label">Ставка</div>
+</div><div class="row">
+<div class="value">от 30%</div><div class="label">Первоначальный взнос</div>
+</div><div class="row">
+<div class="value">25 лет</div><div class="label">Срок кредитования</div>
+</div><div class="row">
+<div class="value"></div><div class="label"><input type="button" class="b24-web-form-popup-btn-50" value="Отправить заявку"/></div>
+</div></div><div class="bank" data-proc="12" data-vznos="20" data-srok="25"><div class="row">
+<div class="value"><img src="./img/logo_deltacredit.png" alt="ДельтаКредит"/><span class="dn">ДельтаКредит</span></div><div class="label">Ипотека «Вторичное жилье»</div>
+</div><div class="row">
+<div class="value">9.2%</div><div class="label">Ставка</div>
+</div><div class="row">
+<div class="value">от 20%</div><div class="label">Первоначальный взнос</div>
+</div><div class="row">
+<div class="value">30 лет</div><div class="label">Срок кредитования</div>
+</div><div class="row">
+<div class="value"></div><div class="label"><input type="button" class="b24-web-form-popup-btn-50" value="Отправить заявку"/></div>
+</div></div><div class="bank" data-proc="11.4" data-vznos="20" data-srok="30"><div class="row">
+<div class="value"><img src="./img/logo_openbank.png" alt="Банк Открытие"/><span class="dn">Банк Открытие</span></div><div class="label">Ипотека «Вторичное жилье»</div>
+</div><div class="row">
+<div class="value">9%</div><div class="label">Ставка</div>
+</div><div class="row">
+<div class="value">от 20%</div><div class="label">Первоначальный взнос</div>
+</div><div class="row">
+<div class="value">30 лет</div><div class="label">Срок кредитования</div>
+</div><div class="row">
+<div class="value"></div><div class="label"><input type="button" class="b24-web-form-popup-btn-50" value="Отправить заявку"/></div>
+</div></div><div class="bank" data-proc="11.3" data-vznos="20" data-srok="30"><div class="row">
+<div class="value"><img src="./img/logo_raiffeisen.png" alt="Райффайзен Банк"/><span class="dn">Райффайзен Банк</span></div><div class="label">Ипотека «Вторичное жилье</div>
+</div><div class="row">
+<div class="value">9.29%</div><div class="label">Ставка</div>
+</div><div class="row">
+<div class="value">от 20%</div><div class="label">Первоначальный взнос</div>
+</div><div class="row">
+<div class="value">30 лет</div><div class="label">Срок кредитования</div>
+</div><div class="row">
+<div class="value"></div><div class="label"><input type="button" class="b24-web-form-popup-btn-50" value="Отправить заявку"/></div>
+</div></div><div class="bank" data-proc="14.5" data-vznos="30" data-srok="25"><div class="row">
+<div class="value"><img src="./img/sovkombank.svg" alt="Совкомбанк"/><span class="dn">Совкомбанк</span></div><div class="label">Ипотека «Вторичное жилье»</div>
+</div><div class="row">
+<div class="value">11.4%</div><div class="label">Ставка</div>
+</div><div class="row">
+<div class="value">от 20%</div><div class="label">Первоначальный взнос</div>
+</div><div class="row">
+<div class="value">30 лет</div><div class="label">Срок кредитования</div>
+</div><div class="row">
+		<div class="value"></div><div class="label"><input type="button" class="b24-web-form-popup-btn-50" value="Отправить заявку"/></div>
+	</div></div><div class="bank" data-proc="14.5" data-vznos="30" data-srok="25"><div class="row">
+	<div class="value"><img src="./img/spm.png" alt="СПМ"/><span class="dn">СПМ</span></div><div class="label">Ипотека «Вторичное жилье»</div>
+	</div><div class="row">
+	<div class="value">9.5%</div><div class="label">Ставка</div>
+	</div><div class="row">
+	<div class="value">от 20%</div><div class="label">Первоначальный взнос</div>
+	</div><div class="row">
+	<div class="value">30 лет</div><div class="label">Срок кредитования</div>
+	</div><div class="row">
+			<div class="value"></div><div class="label"><input type="button" class="b24-web-form-popup-btn-50" value="Отправить заявку"/></div>
+	</div></div><div class="bank" data-proc="14.5" data-vznos="30" data-srok="25"><div class="row">
+	<div class="value"><img src="./img/ipoteka24.jpg" alt="Ипотека 24"/><span class="dn">Ипотека 24</span></div><div class="label">Ипотека «Вторичное жилье»</div>
+	</div><div class="row">
+	<div class="value">12.25%</div><div class="label">Ставка</div>
+	</div><div class="row">
+	<div class="value">от 20%</div><div class="label">Первоначальный взнос</div>
+	</div><div class="row">
+	<div class="value">30 лет</div><div class="label">Срок кредитования</div>
+	</div><div class="row">
+			<div class="value"></div><div class="label"><input type="button" class="b24-web-form-popup-btn-50" value="Отправить заявку"/></div>
+		</div></div><div class="bank" data-proc="14.5" data-vznos="30" data-srok="25"><div class="row">
+		<div class="value"><img src="./img/cvyaz.png" alt="Связь"/><span class="dn">Связь</span></div><div class="label">Ипотека «Вторичное жилье»</div>
+		</div><div class="row">
+		<div class="value">9.55%</div><div class="label">Ставка</div>
+		</div><div class="row">
+		<div class="value">от 20%</div><div class="label">Первоначальный взнос</div>
+		</div><div class="row">
+		<div class="value">30 лет</div><div class="label">Срок кредитования</div>
+		</div><div class="row">
+				<div class="value"></div><div class="label"><input type="button" class="b24-web-form-popup-btn-50" value="Отправить заявку"/></div>
+		</div></div><div class="bank" data-proc="14.5" data-vznos="30" data-srok="25"><div class="row">
+		<div class="value"><img src="./img/unicredit.svg" alt="Юникредит"/><span class="dn">Юникредит</span></div><div class="label">Ипотека «Вторичное жилье»</div>
+		</div><div class="row">
+		<div class="value">10.45%</div><div class="label">Ставка</div>
+		</div><div class="row">
+		<div class="value">от 20%</div><div class="label">Первоначальный взнос</div>
+		</div><div class="row">
+		<div class="value">30 лет</div><div class="label">Срок кредитования</div>
+		</div><div class="row">
+				<div class="value"></div><div class="label"><input type="button" class="b24-web-form-popup-btn-50" value="Отправить заявку"/></div>
+			</div></div><div class="bank" data-proc="14.5" data-vznos="30" data-srok="25"><div class="row">
+			<div class="value"><img src="./img/prombank.png" alt="Промсвязьбанк"/><span class="dn">Промсвязьбанк</span></div><div class="label">Ипотека «Вторичное жилье»</div>
+			</div><div class="row">
+			<div class="value">8.85%</div><div class="label">Ставка</div>
+			</div><div class="row">
+			<div class="value">от 20%</div><div class="label">Первоначальный взнос</div>
+			</div><div class="row">
+			<div class="value">30 лет</div><div class="label">Срок кредитования</div>
+			</div><div class="row">
+					<div class="value"></div><div class="label"><input type="button" class="b24-web-form-popup-btn-50" value="Отправить заявку"/></div>
+			</div></div><div class="bank" data-proc="14.5" data-vznos="30" data-srok="25"><div class="row">
+			<div class="value"><img src="./img/ubbt.svg" alt="УББР"/><span class="dn">УББР</span></div><div class="label">Ипотека «Вторичное жилье»</div>
+			</div><div class="row">
+			<div class="value">9.3%</div><div class="label">Ставка</div>
+			</div><div class="row">
+			<div class="value">от 20%</div><div class="label">Первоначальный взнос</div>
+			</div><div class="row">
+			<div class="value">30 лет</div><div class="label">Срок кредитования</div>
+			</div><div class="row">
+					<div class="value"></div><div class="label"><input type="button" class="b24-web-form-popup-btn-50" value="Отправить заявку"/></div>
+				</div></div><div class="bank" data-proc="14.5" data-vznos="30" data-srok="25"><div class="row">
+				<div class="value"><img src="./img/aizh.jpeg" alt="АИЖК"/><span class="dn">АИЖК</span></div><div class="label">Ипотека «Вторичное жилье»</div>
+				</div><div class="row">
+				<div class="value">9.6%</div><div class="label">Ставка</div>
+				</div><div class="row">
+				<div class="value">от 20%</div><div class="label">Первоначальный взнос</div>
+				</div><div class="row">
+				<div class="value">30 лет</div><div class="label">Срок кредитования</div>
+				</div><div class="row">
+<div class="value"></div><div class="label"><input type="button" class="b24-web-form-popup-btn-50" value="Отправить заявку"/></div>
+</div></div><div class="bank" data-proc="11.3" data-vznos="20" data-srok="30"><div class="row">
+<div class="value"><img src="./img/logo_rosselhoz.png" alt="РоссельхозБанк"/><span class="dn">РоссельхозБанк</span></div><div class="label">Ипотека «Вторичное жилье»</div>
+</div><div class="row">
+<div class="value">9.75%</div><div class="label">Ставка</div>
+</div><div class="row">
+<div class="value">от 20%</div><div class="label">Первоначальный взнос</div>
+</div><div class="row">
+<div class="value">30 лет</div><div class="label">Срок кредитования</div>
+</div><div class="row">
+<div class="value"></div><div class="label"><input type="button" class="b24-web-form-popup-btn-50" value="Отправить заявку"/></div>
+</div></div><div class="bank" data-proc="11.4" data-vznos="20" data-srok="30"><div class="row">
+<div class="value"><img src="./img/akbars.png" alt="Ак барс"/><span class="dn">Акбарс</span></div><div class="label">Ипотека «Вторичное жилье»</div>
+</div><div class="row">
+<div class="value">9.4%</div><div class="label">Ставка</div>
+</div><div class="row">
+<div class="value">от 20%</div><div class="label">Первоначальный взнос</div>
+</div><div class="row">
+<div class="value">30 лет</div><div class="label">Срок кредитования</div>
+</div><div class="row">
+<div class="value"></div><div class="label"><input type="button" class="b24-web-form-popup-btn-50" value="Отправить заявку"/></div>
+</div></div><div class="bank" data-proc="14.9" data-vznos="20" data-srok="25"><div class="row">
+<div class="value"><img src="./img/zapcin.png" alt="Запсибкомбанк"/><span class="dn">Запсибкомбанк</span></div><div class="label">Ипотека  «Новостройка»</div>
+</div><div class="row">
+<div class="value">9.2%</div><div class="label">Ставка</div>
+</div><div class="row">
+<div class="value">от 20%</div><div class="label">Первоначальный взнос</div>
+</div><div class="row">
+<div class="value">30 лет</div><div class="label">Срок кредитования</div>
+</div><div class="row">
+<div class="value"></div><div class="label"><input type="button" class="b24-web-form-popup-btn-50" value="Отправить заявку"/></div>
+</div></div><div class="bank" data-proc="11.4" data-vznos="20" data-srok="30"><div class="row">
+<div class="value"><img src="./img/logo_vtb24.png" alt="Банк ВТБ 24"/><span class="dn">Банк ВТБ 24</span></div><div class="label">Ипотека «Вторичное жилье»</div>
+</div><div class="row">
+<div class="value">9.39%</div><div class="label">Ставка</div>
+</div><div class="row">
+<div class="value">от 20%</div><div class="label">Первоначальный взнос</div>
+</div><div class="row">
+<div class="value">30 лет</div><div class="label">Срок кредитования</div>
+</div><div class="row">
+<div class="value"></div><div class="label"><input type="button" class="b24-web-form-popup-btn-50" value="Отправить заявку"/></div>
+</div></div><div class="bank" data-proc="14" data-vznos="30" data-srok="30"><div class="row">
+<div class="value"><img src="./img/logo_gazprombank.png" alt="Газпромбанк"/><span class="dn">Газпромбанк</span></div><div class="label">Ипотека «Вторичное жилье»</div>
+</div><div class="row">
+<div class="value">9.7%</div><div class="label">Ставка</div>
+</div><div class="row">
+<div class="value">от 20%</div><div class="label">Первоначальный взнос</div>
+</div><div class="row">
+<div class="value">30 лет</div><div class="label">Срок кредитования</div>
+</div><div class="row">
+<div class="value"></div><div class="label"><input type="button" class="b24-web-form-popup-btn-50" value="Отправить заявку"/></div>
+</div></div></div>
+		<a class="more" alt="Скрыть">Другие банки</a> 
+	</div>
+	
+	<div class="calc_about">
+		<div class="files p_20 m_b_30">
+			<h3>Новости</h3>
+		</div>
+			</div>
+</div>
+				</div>
+				<footer>
+					<div class="center p_30 nobr">
+						<b>Остались вопросы? Звоните!</b><br/>
+						<i class="icon _tel_b"></i>
+						<span class="f_30 info_tel ">
+							+7 (347) 214-91-54
+						</span><br/>
+						<a class="round_button b24-web-form-popup-btn-50" style="cursor:pointer">Получить ипотеку</a>
+						<div class="pluso fl m_r" data-background="transparent" data-options="big,round,line,horizontal,counter,theme=06" data-services="vkontakte,facebook,google"></div>								
+					</div>
+					
+					<hr class="line"/>
+					<div class="row f_bl">
+						<div class="col_2 col_xm_1 p_t_30">
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+			<div class="bg_map">
+			<div id="city_map">
+			
+			</div>
+			<div class="close_map">X</div>
+		</div>
+	</body>
+	
+</html>
