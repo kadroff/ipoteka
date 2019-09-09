@@ -1191,7 +1191,7 @@ input[type="radio"]:checked + label.radio {
 
 .calc_bank .bank_list {
   max-height: 460px;
-  overflow: hidden;
+  overflow-y: auto;
 }
 .calc_bank .bank_list.bank_def {
   max-height: 230px;
