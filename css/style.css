@@ -561,7 +561,16 @@ input[type="button"] {
   width: 100%;
   max-width: 282px;
   min-height: 62px;
-  background-color: #6ab8ee;
+  background-color: #f5ca27;
+  box-shadow: inset 0px 10px 0px -5px #f7d748, inset 0px -4px 0px -2px #ea9b0e,
+    inset 0px -8px 0px -4px #ea9d0e, inset 0px -12px 0px -6px #eb9e0f,
+    inset 0px -16px 0px -8px #eca00f, inset 0px -20px 0px -10px #eda20f,
+    inset 0px -24px 0px -12px #eda310, inset 0px -28px 0px -14px #eda610,
+    inset 0px -32px 0px -16px #eea811, inset 0px -36px 0px -18px #efaa11,
+    inset 0px -40px 0px -20px #efac12, inset 0px -44px 0px -22px #f0ae12,
+    inset 0px -48px 0px -24px #f0b013, inset 0px -52px 0px -26px #f0b213,
+    inset 0px -56px 0px -28px #f0b313, inset 0px -60px 0px -30px #f1b414,
+    0px 1px 1px 0px rgba(255, 255, 255, 0.3);
   border-radius: 10px;
   font-size: 20px;
   font-family: Museo Sans, sans-serif;
@@ -576,7 +585,7 @@ input[type="button"] {
 }
 input[type="submit"]:hover,
 input[type="button"]:hover {
-  background: #6ab8ee;
+  background: #f5ca27;
   text-shadow: 0px -1px 1px #fff;
 }
 
@@ -921,16 +930,16 @@ input[type="radio"]:checked + label.radio {
   display: block;
   margin: -18px 0px 0px -14px;
   outline: none;
-  background: #6ab8ee;
+  background: #1abc9c;
   text-align: center;
   padding: 12px 0px;
 }
 .slider .ui-slider-handle:focus {
-  background: #6ab8ee;
+  background: #1abc9c;
 }
 .slider .ui-slider-range-min {
   height: 100%;
-  background: #6ab8ee;
+  background: #1abc9c;
   margin: 0px -10px 0px -14px;
   border-radius: 4px 0px 0px 4px;
 }
@@ -1034,7 +1043,7 @@ input[type="radio"]:checked + label.radio {
 .calc_ipoteka .tabs li {
   display: table-cell;
   list-style: none;
-  border: 1px solid #6ab8ee;
+  border: 1px solid #1abc9c;
   padding: 0px;
   margin: 0px;
   background-color: #fff;
@@ -1048,19 +1057,19 @@ input[type="radio"]:checked + label.radio {
   color: #222;
 }
 .calc_ipoteka .tabs li.ui-tabs-active {
-  background: #6ab8ee;
+  background: #1abc9c;
 }
 .calc_ipoteka .tabs li.ui-tabs-active a {
   color: #fff;
 }
 .calc_ipoteka input[type="text"] {
-  border-color: #6ab8ee;
+  border-color: #1abc9c;
 }
 .calc_ipoteka input[type="radio"] + label.radio {
-  box-shadow: 0px 0px 0px 1px #6ab8ee;
+  box-shadow: 0px 0px 0px 1px #1abc9c;
 }
 .calc_ipoteka input[type="radio"]:checked + label.radio {
-  background: #6ab8ee;
+  background: #1abc9c;
 }
 
 .calc_result {
@@ -1191,7 +1200,7 @@ input[type="radio"]:checked + label.radio {
 
 .calc_bank .bank_list {
   max-height: 460px;
-  overflow-y: auto;
+  overflow: hidden;
 }
 .calc_bank .bank_list.bank_def {
   max-height: 230px;
